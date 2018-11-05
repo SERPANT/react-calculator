@@ -6,9 +6,122 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 255, 0.5),
+    rgba(255, 0, 0, 1)
+  );
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.calculator {
+  background: black;
+  width: 320px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.input-field {
+  width: 97.5%;
+  background: #3a4557;
+  border: none;
+  color: white;
+  text-align: right;
+  font-size: 25px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 8px;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.button-set-number,
+.button-set-equation {
+  width: 100%;
+  background: #282f37;
+}
+
+.number-equation-button {
+  float: left;
+}
+
+.number-equation-button {
+  width: 75%;
+}
+.number-button {
+  background: #282f37;
+  border: none;
+  color: #66ccff;
+  padding: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 33.333333%;
+  font-size: 20px;
+}
+
+.equation-button {
+  background: #282f37;
+  border: none;
+  color: #66ccff;
+  padding: 25px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  width: 33.333333%;
+  font-size: 12px;
+  color: #cc3366;
+}
+
+.equation-button:hover {
+  background: white;
+  color: black;
+}
+
+.number-button:hover {
+  background: #cc3366;
+}
+
+.button-set-function {
+  width: 25%;
+  float: right;
+}
+
+.number-button:focus,
+.equation-button:focus,
+.operator-button:focus {
+  outline: none;
+}
+
+.operator-button {
+  display: block;
+  background: #282f37;
+  border: none;
+  color: #cc3366;
+  padding: 25px;
+  width: 100%;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.operator-button:hover {
+  background: white;
+  color: black;
+}
+
+.number-pad {
+  margin-top: 10px;
+}
+
+.calculator {
+  box-shadow: 10px 10px 8px black;
+  margin: 0 auto;
+  margin-top: 30px;
 }
